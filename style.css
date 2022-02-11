@@ -72,11 +72,6 @@
 
 
 
-.start:hover {
-    background-color: rgb(238, 81, 81);
-    cursor: pointer;
-}
-
 @media (max-width: 1024px) {
     .page {
         width: 80vw;
