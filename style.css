@@ -43,6 +43,14 @@
     justify-content: center;
 }
 
+.button-container2 {
+    position: relative;
+    margin-top: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .start {
     font-size: 1rem;
     background-color: rgba(231, 24, 24, 0.87);
@@ -60,4 +68,76 @@
 .start:hover {
     background-color: rgb(238, 81, 81);
     cursor: pointer;
+}
+
+
+
+.start:hover {
+    background-color: rgb(238, 81, 81);
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .page {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 640px) {
+    .page {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 460px) {
+    .page {
+        width: 95vw;
+    }
+}
+
+.error-text {
+    color: red;
+    font-size: 0.5rem;
+}
+
+
+.form {
+    position: relative;
+    top: 5vh;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group {
+    flex-basis: 50%;
+}
+
+label {
+    font-size: 0.6rem;
+}
+
+input {
+    width: 12vw;
+    min-width: 140px;
+    height: 5vh;
+    margin-top: 5px;
+    border: 0px;
+    font-size: 1.4rem;
+    transition: all 0.3s;
+}
+
+input:valid {
+    border: 1px solid green;
+}
+
+input:invalid {
+    border: 1px solid rgb(216, 75, 19);
+}
+
+.hidden {
+    display: none;
 }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envelo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300;400&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <h1 class="envelo">ENVELO</h1>
+        <p class="description">Możesz mieć swoją przesyłkę w kilkanaście sekund</p>
+        <p class="description">Rozpocznij klikając przycisk</p>
+        <form class="form" method="get" action="last-step.html">
+            <div class="form-group form-box">
+                <label for="phone">Numer telefonu</label><br>
+                <input type="tel" id="phone" placeholder="555-555-555" required minlength="11" maxlength="11" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+                <p class="error-text hidden">Numer jest niepoprawny lub</p>
+            </div>
+            <div class="form-box">
+                <label for="code">Kod odbioru</label><br>
+                <input type="text" id="code" placeholder="1234" required minlength="4" maxlength="4">
+                <p class="error-text hidden">Kod jest niepoprawny</p>
+            </div>
+            <div class="button-container2">
+                <button type="submit" class="start">Odbierz paczkę</button>
+            </div>
+        </form> 
+    </div>
+
+    <script src="start.js"></script>
+</body>
+</html>
